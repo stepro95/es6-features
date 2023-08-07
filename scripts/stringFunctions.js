@@ -1,6 +1,6 @@
 const hello = "Hello World!";
 
-console.log(hello.startsWith("Hello"));
-console.log(hello.endsWith("."));
-console.log(hello.includes("lo"));
-console.log(hello.repeat(5));
+console.log(`${hello.startsWith("Hello")}
+${hello.endsWith(".")}
+${hello.includes("lo")}
+${hello.repeat(5)}`);

@@ -1,4 +1,4 @@
-formatPerson = (firstName, lastName, birthYear) =>
+const formatPerson = (firstName, lastName, birthYear) =>
   `Hi ${firstName} ${lastName}, aged ${2023 - birthYear}.`;
 
 console.log(formatPerson("Matthijs", "Mennens", 1993));

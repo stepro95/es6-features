@@ -32,10 +32,15 @@ class Car extends Vehicle {
 
 const trabant = new Car("Trabant", 20, 700, "petrol");
 const taycan = new Car("Taycan", 800, 2000, "electric");
+const bicycle = new Vehicle("Canyon", 0.2, 100, 2, "food");
 
 console.log(trabant);
+console.log(bicycle);
 
-console.log(trabant.roadTaxes);
-console.log(trabant.powerToWeight);
-console.log(taycan.roadTaxes);
-console.log(taycan.powerToWeight);
+console.log(`\nTrabant: 
+  Tax: ${trabant.roadTaxes}
+  Power to weight: ${trabant.powerToWeight}
+
+Taycan:
+  Tax: ${taycan.roadTaxes}
+  Power to weight: ${taycan.powerToWeight}`);

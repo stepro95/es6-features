@@ -9,6 +9,7 @@ console.log(rest);
 let person = {
   name: "Dries",
   age: 25,
+  abilities: { canCode: true },
   drunk: false,
 };
 
@@ -16,5 +17,6 @@ let { name, age, drunk = false } = person;
 console.log(`${name}, ${age}, ${drunk ? "is wasted" : "is sober"}`);
 
 // Function object destructuring
-getPersonString = ({ name, age }) => `${name}, ${age}`;
+const getPersonString = ({ name, age, abilities: { canCode } }) =>
+  `${name}, ${age}: can code? ${canCode}`;
 console.log(getPersonString(person));
